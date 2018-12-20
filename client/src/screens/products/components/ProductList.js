@@ -8,14 +8,12 @@ import {Container, Row, Column} from 'shared/layout'
 import ProductsContext from '../product-context'
 import SearchBar from 'shared/components/SearchBar'
 import {navigate, Link} from '@reach/router'
-import Loading from 'shared/loading'
 
 const Right = styled.div({float: 'right', margin: '30px 30px 10px'})
 const Left = styled.div({float: 'left', margin: '32px 16px'})
 
 function ProductsList({products}) {
   const [showError, setError] = useState({search: false})
-  const [showLoading, setLoading] = useState(false)
 
   const handleSubmit = values => {
     const search = values.search.trim()
@@ -38,10 +36,6 @@ function ProductsList({products}) {
               submit={handleSubmit}
               setError={setError}
               showError={showError}
-            />
-            <Loading
-              css={{opacity: showLoading ? null : 0, transition: 'all 0.2s'}}
-              size="small"
             />
           </Row>
         </Column>

@@ -1,8 +1,8 @@
 /* @jsx jsx */
-import {jsx, css} from '@emotion/core'
+import {jsx} from '@emotion/core'
 
 import {useState, useEffect} from 'react'
-import {navigate} from '@reach/router'
+import {navigate, Link} from '@reach/router'
 import {Container, Column, Row} from 'shared/layout'
 import SearchBar from 'shared/components/SearchBar'
 import styled from '@emotion/styled'
@@ -35,7 +35,7 @@ function Home() {
       >
         <Column width="12">
           <Row css={{backgroundColor: '#FFE600'}}>
-            {mercadolibre}
+            <Link to="/">{mercadolibre}</Link>
             <SearchBar
               submit={handleSubmit}
               setError={setError}

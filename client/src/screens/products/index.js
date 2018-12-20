@@ -4,7 +4,7 @@ import {jsx} from '@emotion/core'
 import {Suspense, useState, useContext} from 'react'
 import PropTypes from 'prop-types'
 
-import {LoadingMessagePage, mercadolibre} from 'shared/pattern'
+import {LoadingMessagePage} from 'shared/pattern'
 import ProductList from './components/ProductList'
 import {Context as ClientContext} from 'user-client'
 

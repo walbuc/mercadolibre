@@ -26,7 +26,7 @@ const SearchBar = ({submit, setError, showError}) => (
               justifyContent: 'center',
               maxWidth: 800,
               width: '80%',
-              margin: '10px 0px 10px 10px',
+              margin: '10px 0px 5px 10px',
             }}
           >
             <Input
