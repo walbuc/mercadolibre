@@ -2,7 +2,7 @@
 
 Project Deployed to:
 
-https://mercadolibre-kasotplvjn.now.sh/
+https://mercadolibre-jkfxhqrjdf.now.sh/
 
 Client built in React using Suspense, react cache and graphql.
 
