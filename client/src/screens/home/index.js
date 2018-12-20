@@ -4,7 +4,6 @@ import {jsx, css} from '@emotion/core'
 import {useState, useEffect} from 'react'
 import {navigate} from '@reach/router'
 import {Container, Column, Row} from 'shared/layout'
-import Loading from 'shared/loading'
 import SearchBar from 'shared/components/SearchBar'
 import styled from '@emotion/styled'
 import {Text, mercadolibre} from 'shared/pattern'
@@ -18,7 +17,6 @@ function Home() {
     import('../products')
   }, [])
 
-  const [showLoading, setLoading] = useState(false)
   const [showError, setError] = useState({search: false})
   const handleSubmit = values => {
     const search = values.search.trim()
