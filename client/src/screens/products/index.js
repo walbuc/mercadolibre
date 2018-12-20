@@ -49,6 +49,7 @@ Products.propTypes = {
 function SuspendedProducts(props) {
   return (
     <Suspense
+      maxDuration={1000}
       fallback={
         <LoadingMessagePage>
           Loading data for {props.product}
